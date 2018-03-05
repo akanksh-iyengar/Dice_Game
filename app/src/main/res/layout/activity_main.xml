@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akanksh.scarnesdice.MainActivity">
+
+    <TextView
+        android:id="@+id/textView_uscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:text="Your Score"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="74dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button_roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/roll"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="397dp"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/button5_reset"
+        android:layout_toLeftOf="@+id/button5_reset"
+        android:layout_toStartOf="@+id/button5_reset" />
+
+    <Button
+        android:id="@+id/button_hold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hold"
+        android:layout_alignBaseline="@+id/button_roll"
+        android:layout_alignBottom="@+id/button_roll"
+        android:layout_toRightOf="@+id/button5_reset"
+        android:layout_toEndOf="@+id/button5_reset" />
+
+    <Button
+        android:id="@+id/button5_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:layout_marginTop="76dp"
+        android:layout_below="@+id/imageView_dice"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView_dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dice1"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/textView_uscore"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView_cpuscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="AI score"
+        android:layout_below="@+id/textView_uscore"
+        android:layout_alignRight="@+id/textView_uscore"
+        android:layout_alignEnd="@+id/textView_uscore"
+        android:layout_alignLeft="@+id/textView_uscore"
+        android:layout_alignStart="@+id/textView_uscore" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:text="We'll see who will win" />
+</RelativeLayout>
